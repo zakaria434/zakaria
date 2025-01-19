@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription</title>
+    <style>
+        body{
+            color: white;
+            background-image: url(motatawi3_club.jpg);
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-repeat: no-repeat; /* Prevents repeating the image */
+            background-position: center; /* Centers the image */
+        }
+        .container{
+            width: 50%;
+            background-color: #1fa7e5;
+            display: flex;
+            justify-content: center;
+            padding: 4px;
+            margin-left: 25%;
+        }
+        fieldset{
+            width: 80%;
+            border-width: 2px;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form class="form" action="motatawi3_club.jpg">
+        <h1>Formulaire d'Inscription</h1>
+        <fieldset>
+            <legend><b>Informations Personnelles</b></legend>
+            <div class="Informations_Personnelles">
+                <label for="Prénom">Prénom : </label>
+                <input type="text" id="Prénom" required><br><br>
+                <label for="Nom">Nom : </label>
+                <input type="text" id="Nom" required><br><br>
+                <label for="Genre">Genre : </label>
+                <select name="Genre" id="Genre" required><br><br>
+                    <option value="">Sélectionnez...</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br><br>
+                <label for="Date_de_naissance">Date de naissance : </label>
+                <input type="date" required><br><br>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Coordonnées</b></legend>
+            <div class="Coordonnées">
+                <label for="Email">Email : </label>
+                <input type="email" id="Email" required><br><br>
+                <label for="Téléphone">Téléphone : </label>
+                <input type="tel" id="Téléphone" placeholder="Ex : +212 61 23 45 67 8" required><br><br>
+                <label for="Adresse">Adresse : </label>
+                <input type="text" id="Adresse" required><br><br>
+                <label for="Ville">Ville : </label>
+                <input type="Ville" id="Ville" required><br><br>
+                <label for="Code_Postal">Code Postal : </label>
+                <input type="tel" id="Code_Postal" required><br><br>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Sécurité</b></legend>
+            <div class="Sécurité">
+                <label for="Mot_de_passe">Mot de Passe : </label>
+                <input type="password" id="Mot_de_passe" required><br><br>
+                <label for="Confirmed_Mot_de_passe">Confirmer le Mot de Passe : </label>
+                <input type="password" id="Confirmed_Mot_de_passe" required><br><br>
+            </div>
+        </fieldset>
+        <br>
+        <div style="padding-left: 115px;">
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
